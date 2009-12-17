@@ -1,2 +1,22 @@
 Simple Format Live Preview
 by Jarrett Meyer
+------------------------------------------------------------
+
+This is my first Prototype class for putting together a live
+preview for Rails' simple_format() text helper method.
+
+------------------------------------------------------------
+<html>
+<body>
+<form id="my-form">
+	<textarea id="my-textarea"></textarea>
+	<div id="my-live-preview"></div>
+</form>
+<script type="text/javascript" src="./path/to/prototype.js"></script>
+<script type="text/javascript" src="./path/to/simple-format-preview.js"></script>
+<script type="text/javascript">
+	new SimpleFormatPreview('my-textarea', 'my-live-preview');
+</script>
+</body>
+</html>
+------------------------------------------------------------

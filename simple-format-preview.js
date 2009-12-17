@@ -9,7 +9,7 @@ SimpleFormatPreview.prototype = {
     },
     onKeyUp: function() {
         var content = $F(this.source).escapeHTML();
-        content = content.replace(/^\s+|\s+$/, '');
+        content = content.replace(/^\s+|\s+$/g, '');
         if (content == '') {
             $(this.preview).hide();
             return;
