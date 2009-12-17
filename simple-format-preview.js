@@ -6,6 +6,7 @@ SimpleFormatPreview.prototype = {
         this.preview = preview;
         this.onKeyUp(); // to initialize the preview area        
         $(this.source).observe('keyup', this.onKeyUp.bind(this));
+        $(this.source).observe('blur', this.onKeyUp.bind(this));
     },
     onKeyUp: function() {
         var content = $F(this.source).escapeHTML();
