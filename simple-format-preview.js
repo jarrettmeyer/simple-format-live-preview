@@ -13,12 +13,11 @@ SimpleFormatPreview.prototype = {
         content = content.replace(/^\s+|\s+$/g, '');
         if (content == '') {
             $(this.preview).hide();
-            return;
+            return; // just hide the preview and get out
         } else {
             $(this.preview).show();
         }
-        content = content.replace(/\n{3,}/g, '\n\n');
-        content = content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br/>');
+        content = content.replace(/\n{2,}/g, '</p><p>').replace(/\n/g, '<br/>');
         content = '<p>' + content + '</p>';
         $(this.preview).innerHTML = content;
     }
