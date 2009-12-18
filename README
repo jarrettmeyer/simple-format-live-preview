@@ -1,5 +1,6 @@
 Simple Format Live Preview
 by Jarrett Meyer
+
 ------------------------------------------------------------
 
 This is my first Prototype class for putting together a live
@@ -20,3 +21,6 @@ preview for Rails' simple_format() text helper method.
 </body>
 </html>
 ------------------------------------------------------------
+
+Licensed under MIT-style license. See license.txt for more
+details.
